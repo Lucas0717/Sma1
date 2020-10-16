@@ -17,7 +17,7 @@ def getDependencies(input_file, output_file, git_hub_key, hop, partitions):
 
     gh = xkcd2347.GitHub(key = git_hub_key)
     result = []
-
+    
     def process_line(link):
         link = link.rstrip()
         owner, repo = link.split(".com/")[1].split("/")
